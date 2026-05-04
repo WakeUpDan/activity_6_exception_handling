@@ -41,4 +41,8 @@ class MathOperation:
                 return float(input(prompt))
             except ValueError:
                 print("Invalid input. Please enter a numerical value.")
-    
+
+     def start(self):
+        """Main loop following the steps in image_9cdf4f.png."""
+        print("--- Welcome to the OOP Calculator ---")
+        

@@ -1,5 +1,8 @@
 # The "Engine" Layer (Inheritance)
 
+from random import choice
+
+
 class MathOperation:
     """Base class for all math logic."""
     def execute(self, a: float, b: float) -> float:
@@ -51,3 +54,7 @@ class MathOperation:
             for key, (name, _) in self._registry.items():
                 print(f"{key}. {name}")
         
+        choice = input("Select an operation (1-4): ")
+        
+        if choice in self._registry:
+            label, processor = self._registry[choice]

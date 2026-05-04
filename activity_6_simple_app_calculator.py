@@ -10,3 +10,6 @@ class MathOperation:
 
     class Subtractor(MathOperation):
      def execute(self, a, b): return a - b
+
+    class Multiplier(MathOperation):
+     def execute(self, a, b): return a * b

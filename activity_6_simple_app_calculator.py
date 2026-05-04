@@ -7,3 +7,6 @@ class MathOperation:
     
     class Adder(MathOperation):
      def execute(self, a, b): return a + b
+
+    class Subtractor(MathOperation):
+     def execute(self, a, b): return a - b

@@ -13,3 +13,9 @@ class MathOperation:
 
     class Multiplier(MathOperation):
      def execute(self, a, b): return a * b
+
+    class Divider(MathOperation):
+     def execute(self, a, b):
+      if b == 0:
+        raise ZeroDivisionError("Division by zero is mathematically undefined.")
+        return a / b

@@ -45,4 +45,9 @@ class MathOperation:
      def start(self):
         """Main loop following the steps in image_9cdf4f.png."""
         print("--- Welcome to the OOP Calculator ---")
+
+        while True:
+            print("\nAvailable Operations:")
+            for key, (name, _) in self._registry.items():
+                print(f"{key}. {name}")
         

@@ -76,3 +76,10 @@ class MathOperation:
                 print(f"\nMath Error: {e}")
         else:
             print("Operation not recognized.")
+
+            # Step 4-6: Retry logic
+
+        user_response = input("\nWould you like to try again? (y/n): ").lower().strip()
+        if user_response not in ['y', 'yes']:
+            print("Thank you!")
+            break

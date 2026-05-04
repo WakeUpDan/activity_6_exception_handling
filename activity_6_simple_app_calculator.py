@@ -32,4 +32,13 @@ class MathOperation:
             "2": ("Subtraction", Subtractor()),
             "3": ("Multiplication", Multiplier()),
             "4": ("Division", Divider())
-}
+        }
+        
+     def _get_number(self, prompt: str) -> float:
+        """Helper function to handle numeric input exceptions."""
+        while True:
+            try:
+                return float(input(prompt))
+            except ValueError:
+                print("Invalid input. Please enter a numerical value.")
+    

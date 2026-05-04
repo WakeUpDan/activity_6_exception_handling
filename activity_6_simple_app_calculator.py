@@ -1,6 +1,9 @@
 # The "Engine" Layer (Inheritance)
 
+from cProfile import label
+from platform import processor
 from random import choice
+from unittest import result
 
 
 class MathOperation:
@@ -63,3 +66,13 @@ class MathOperation:
 
             val1 = self._get_number("Enter first number: ")
             val2 = self._get_number("Enter second number: ")
+
+            # Logic execution with Exception Handling
+            
+            try:
+                result = processor.execute(val1, val2)
+                print(f"\n[Result] {label}: {result}")
+            except ZeroDivisionError as e:
+                print(f"\nMath Error: {e}")
+        else:
+            print("Operation not recognized.")

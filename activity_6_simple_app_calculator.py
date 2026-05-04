@@ -55,6 +55,11 @@ class MathOperation:
                 print(f"{key}. {name}")
         
         choice = input("Select an operation (1-4): ")
-        
+
         if choice in self._registry:
             label, processor = self._registry[choice]
+
+            # Input handling
+
+            val1 = self._get_number("Enter first number: ")
+            val2 = self._get_number("Enter second number: ")

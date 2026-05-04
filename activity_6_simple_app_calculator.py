@@ -19,3 +19,17 @@ class MathOperation:
       if b == 0:
         raise ZeroDivisionError("Division by zero is mathematically undefined.")
         return a / b
+      
+      # The "Application" Layer
+
+    class UniqueCalculator:
+     def __init__(self):
+       
+      # Mapping choices to specific inherited classes
+
+        self._registry = {
+            "1": ("Addition", Adder()),
+            "2": ("Subtraction", Subtractor()),
+            "3": ("Multiplication", Multiplier()),
+            "4": ("Division", Divider())
+}
